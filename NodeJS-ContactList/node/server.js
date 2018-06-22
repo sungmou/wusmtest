@@ -15,7 +15,7 @@ var port = process.env.PORT || 8000;
 
  //wusm
  app.get('/status',function(req,res){
-     res.send("wusm test ok...");
+     res.send("wusm test ok......");
  });
 
  app.use(bodyParser.json());
