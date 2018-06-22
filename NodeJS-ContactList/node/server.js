@@ -13,11 +13,6 @@ var port = process.env.PORT || 8000;
 
  var server = http.createServer(app);
 
- //wusm
- app.get('/status',function(req,res){
-     res.send("wusm test ok......");
- });
-
  app.use(bodyParser.json());
 
  app.use(swaggerize({
