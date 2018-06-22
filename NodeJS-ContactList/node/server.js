@@ -14,7 +14,7 @@ var port = process.env.PORT || 8000;
  var server = http.createServer(app);
 
  //wusm
- app.use('/status',function(require,resolve){
+ app.get('/status',function(require,resolve){
      resolve.send("wusm test ok...");
  });
 
