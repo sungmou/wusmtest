@@ -14,7 +14,7 @@ var port = process.env.PORT || 8000;
  var server = http.createServer(app);
 
  app.get('/test',function(req,res){
-     res.send("test...");
+     res.send("test...wusm test");
     });
 
  app.use(bodyParser.json());
