@@ -13,6 +13,10 @@ var port = process.env.PORT || 8000;
 
  var server = http.createServer(app);
 
+ app.get('/test',function(req,res){
+     res.send("test...");
+    });
+
  app.use(bodyParser.json());
 
  app.use(swaggerize({
